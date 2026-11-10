@@ -81,7 +81,7 @@ with st.sidebar:
         value=False,
         help="預設關閉以獲得最快秒回速度；勾選後若筆記無紀錄會額外搜尋 Chemguide/RSC 網頁。"
     )
-    student_id = st.text_input("🧑‍🎓 Class & Name (選填)", placeholder="e.g., 5A (12) Chan Tai Man")
+    student_id = st.text_input("🧑‍🎓 Class & Name (必填)", placeholder="e.g., 5A (12) Chan Tai Man")
 
 if (not flash_api_key and not pro_api_key) or not api_base_url:
     st.info("👈 請先在 `.streamlit/secrets.toml` 或點擊左上角展開側邊欄填入 API 密鑰與 Base URL。")
